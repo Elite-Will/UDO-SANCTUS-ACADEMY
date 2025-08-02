@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admissions - Udo Sanctus Academy</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/admissions">Admissions</a>
+    <a href="/contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>Admissions</h1>
+    <p class="lead">Welcome! Please fill out the form below to apply for admission to Udo Sanctus Academy.</p>
+
+    <form action="/submit-admission" method="post" novalidate>
+      <label for="full_name">Full Name</label>
+      <input type="text" id="full_name" name="full_name" placeholder="Your full name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="class">Class Applying For</label>
+      <select id="class" name="class" required>
+        <option value="" disabled selected>-- Select Class --</option>
+        <option value="JSS1">JSS1</option>
+        <option value="JSS2">JSS2</option>
+        <option value="JSS3">JSS3</option>
+        <option value="SSS1">SSS1</option>
+        <option value="SSS2">SSS2</option>
+        <option value="SSS3">SSS3</option>
+        <option value="University Preparatory">University Preparatory</option>
+      </select>
+
+      <label for="message">Additional Information</label>
+      <textarea id="message" name="message" placeholder="Tell us anything else..." rows="5"></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+  <script src="/static/js/script.js"></script>
+</body>
+</html>
