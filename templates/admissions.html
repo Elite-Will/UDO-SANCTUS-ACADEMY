@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admissions - Udo Sanctus Academy</title>
+  <link rel="stylesheet" href="/static/css/admissions.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="/">
+        <img src="/static/images/Udo Sanctus Academy Small  ID.jpg" alt="Udo Sanctus Academy Logo" class="logo-img">
+        <p>Udo Sanctus Academy</p>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/about">ABOUT</a></li>
+        <li><a href="/admissions">ADMISSIONS</a></li>
+        <li><a href="/contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="admissions">
+    <div class="container">
+      <h1>Admissions</h1>
+      <hr>
+      <p>Welcome! Please fill out the form below to apply for admission to Udo Sanctus Academy.</p>
+
+      <form action="/submit-admission" method="post" class="my_form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="Name Required" placeholder="Enter full name..." required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required />
+
+        <label for="age">Student Age:</label>
+        <select id="age" name="age" required>
+          <option value="" disabled selected>-- Select Age --</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="Other">Other (not listed)</option>
+        </select>
+
+          <label for="class_applying">Class Applying For</label>
+          <select id="class_applying" name="class_applying" required>
+            <option value="" disabled selected>-- Select Class --</option>
+            <option value="JSS1">JSS1</option>
+            <option value="JSS2">JSS2</option>
+            <option value="JSS3">JSS3</option>
+            <option value="SSS1">SSS1</option>
+            <option value="SSS2">SSS2</option>
+            <option value="SSS3">SSS3</option>
+            <option value="University Preparatory">University Preparatory</option>
+          </select>
+
+          <label for="message">Additional Information</label>
+          <textarea id="message" name="message" placeholder="Tell us anything else..." rows="5"></textarea>
+
+          <input class="button" id="butt"type="submit" value="SUBMIT APLLICATTION" name="">
+        </form>
+    </div>
+  </section>
+
+
+  <footer>
+        <div class="logo">
+      <a href="/">
+        <img src="/static/images/Udo Sanctus Academy Small  ID.jpg" alt="Udo Sanctus Academy Logo" class="logo-img">
+        <p>Udo Sanctus Academy</p>
+      </a>
+    </div>
+    <section class="cards">
+        <div class="card">
+        <img src="/static/images/phone-img.png">
+            <h2>Call Us</h2>
+            <hr>
+            <p>+234 804 316 3326</p>
+            <p>+234 902 444 1281</p>
+        </div>
+
+        <div class="card">
+            <img src="/static/images/location-img.png">
+            <h2>Address</h2>
+            <hr>
+            <p>Plot No: 34252, Opposite Dorretts Supermarket, Atiku Street, Jos, Plateau State.</p>
+        </div>
+
+        <div class="card">
+            <img src="/static/images/email-img.jpg" id="mail">
+            <h2>Email Us</h2>
+            <hr>
+            <p>udosanacademy@gmail.com</p>
+        </div>
+    </section>
+
+    <div class="footer-container">
+      <!-- <p><a href="/contact">Contact Us</a></p> -->
+      <p>&copy; 2025 Udo Sanctus Academy.</p>
+    </div>
+  </footer>
+
+  <script src="/static/js/script.js"></script>
+</body>
+</html>
