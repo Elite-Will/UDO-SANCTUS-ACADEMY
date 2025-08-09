@@ -1,87 +1,40 @@
-/* Theme Colors */
+/* General Colors */
 * {
   --black: #000000;
   --grey: #e9e3df;
   --orange: #ff7a30;
   --blue: #004080;
   --white: #ffffff;
+  --pinkgrey: #F0EAEA;
+  --greengrey: #556565;
 }
 
-body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Header */
-header {
-  background-color: var(--blue);
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 3px solid var(--orange);
-}
-
-
-header nav {
-  font-weight: bold;
-}
-
-header a {
-    text-decoration: none;
-    color: var(--white);
-    padding: 20px;
-}
-
-header ul {
-  margin: 0;
-}
-
-header li {
-  float: left;
-  display: inline;
-  padding: 0 20px;
-}
-
-nav a:hover {
-  color: var(--orange);
-}
-
-/* Header Logo */
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: var(--white);
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.logo-img {
-  height: 40px;
-  margin-right: 5px;
-}
-
-
+/* Admissions Page styling */
 section.admissions{
+  color: var(--greengrey);
   display: flex;  
   justify-content: center;
   align-items: center;
   background-size: cover;
   padding: 30px, 0px;
   border-top: 5px solid var(--white);
-  background-image:url("/static/images/contact bg.png"); 
+  background-image:url("/static/images/application bg.png"); 
+}
+
+section.admissions h1{
+  padding:0 200px 0 200px;
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+section.admissions p{
+  font-size: 18px;
 }
 
 /* FORM */
 .my_form{
-  color:#FF7A30;
+  color:var(--orange);
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -94,7 +47,16 @@ section.admissions{
 }
 
 .my_form input{
-    background-color:rgb(240, 234, 234);
+    background-color:--;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.my_form select{
+    background-color:--;
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
@@ -104,7 +66,7 @@ section.admissions{
 
 .my_form textarea {
     height: 100px;
-    background-color:rgb(240, 234, 234) ;
+    background-color:var(--pinkgrey);
     border-radius: 10px;
 }
 
@@ -125,34 +87,6 @@ section.admissions{
 
 #mail{
     margin: 20px;
-}
-
-/* Footer Styling */
-footer {
-  background-color: var(--blue);
-  color: var(--white);
-  text-align: center;
-  padding: 1.5rem 1rem;
-  font-size: 0.9rem;
-}
-
-.footer-info p {
-  margin: 0.4rem 0;
-}
-
-.footer-nav {
-  margin: 0.8rem 0;
-}
-
-.footer-nav a {
-  display: flex;
-  color: var(--black);
-  text-decoration: none;
-  margin: 0 0.5rem;
-}
-
-.footer-nav a:hover {
-  text-decoration: underline;
 }
 
 
