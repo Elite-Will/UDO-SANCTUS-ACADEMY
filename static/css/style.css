@@ -1,0 +1,29 @@
+:root {
+    --black: #000000;
+    --orange: #FF7A30;
+    --blue: #004080;
+    --light-blue: rgb(0, 204, 255);
+    --white: #ffffff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{ 
+    font: normal 18px Arial, Helvetica, Sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+.clear {
+    clear: both;
+}
+
+h1{
+ color: var(--white);
+}
