@@ -7,11 +7,6 @@
   --white: #ffffff;
 }
 
-body{
-  margin: 0;
-  padding: 0;
-}
-
 /* Header */
 header {
   background-color: var(--blue);
