@@ -19,7 +19,7 @@ body{
 header {
   position: relative;
   background-color: var(--blue);
-  height: 80px;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
